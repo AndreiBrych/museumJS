@@ -1,0 +1,1733 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  
+  
+  *,
+  *:before,
+  *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  
+  :focus,
+  :active {
+    outline: none;
+  }
+  a:focus,
+  a:active {
+    outline: none;
+  }
+  
+  
+  nav,
+  footer,
+  header,
+  aside {
+    display: block;
+  }
+  
+  
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  
+  input,
+  button,
+  textarea {
+    font-family: inherit;
+  }
+  
+  
+  input::-ms-clear {
+    display: none;
+  }
+  button {
+    cursor: pointer;
+  }
+  button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+  a,
+  a:visited {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  ul li {
+    list-style: none;
+  }
+  img {
+    vertical-align: top;
+  }
+  h1,
+  h2,
+  h3,
+  h5,
+  h6 {
+    font-size: inherit;
+    font-weight: 400;
+  }
+
+  body {
+    font-family:  'Roboto' ;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    color:#FFFFFF;
+    margin: 0 auto;
+  }
+
+  html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
+
+@media (max-width:1024px) {
+  
+    .container {
+      width: 984px;
+    }
+    /* section header style.css (1024px)  start*/
+   
+    .header_container {
+      height: 130px;
+      margin-top: -12px;
+    }
+
+    .header_burger {
+      display: block;
+      position: relative;
+      width: 32px;
+      height: 18px;
+    }
+
+    .header_burger span {
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: white;
+      top: 5px;
+      left: 0;
+      transition: all 0.3s ease 0s;
+    }
+
+    .header_burger ::before,
+    .header_burger ::after {
+      content: '';
+      background-color: white;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      transition: all 0.3s ease 0s;
+    }
+    
+    .header_burger ::before {
+      top: 8px;
+    }
+    
+    .header_burger ::after {
+      bottom: 8px;
+    }
+
+    .header_burger.active ::after {
+     transform: rotate(45deg);
+     top: 1px;  
+    }
+
+    .header_burger.active ::before {
+      transform: rotate(-45deg);
+      top: 1px;  
+     }
+
+     .header_burger.active span{
+       background-color: black;
+     }
+   
+     .header_nav {
+       position: absolute;
+       top: 130px;
+       left: -100%;
+       width: 297px;
+       height: 585px;
+       background-color: black;
+       z-index: 2;
+       transition: all 0.5s ease 0s;
+       
+     }
+
+     
+     .header_nav.active {
+       left: 0;
+     }
+
+     .header_list {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      margin-top: 35px;
+      margin-left: 55px;
+     }
+    
+     .header_item {
+      margin-bottom:25px ;
+      display: flex;
+      gap: 15px;
+
+     }
+
+     
+     .header_item a {
+      font-size: 20px;
+      line-height: 23px;
+      width: 100px;
+      
+     
+     }
+
+     .header_item span {
+      content: url(assets/svg/burgervector.svg);
+      display: inline-block;
+      
+      
+     }
+
+     
+    /* section header style.css (1024px)  end */
+
+    /* section welcome style.css (1024px)  start*/
+    .welcome {
+      height: 598px;
+    }
+
+    .container_welcome {
+    height: 597px;
+    }
+
+    
+
+    .list_img img {
+     width: 700px;
+     height: 525;
+     padding-top: 12px; 
+    }
+
+    .welcome_container {
+      width:500px;
+      margin-top: 125px;
+      
+    }
+    
+    .section-title {
+      font-size: 50px;
+    }
+
+    .welcome_container p {
+      font-size: 24px;
+      margin-top: 22px;
+    }
+
+    .welcome_buttom {
+      width: 300px;
+      height: 60px;
+      margin-top: -28px;
+    }
+
+    .welcome_buttom a {
+      font-size: 20px;
+      padding-left: 46px;
+      line-height: 23px;
+    }
+
+    .control {
+      width: 700px;
+      height: 120px;
+      position: absolute;
+      right: 0px;
+      top: 595px;
+      gap: 43px;
+      justify-content: unset;
+
+    }
+
+    .control p {
+      font-size: 20px;
+      margin-left: 205px;
+    }
+
+    .control1 li {
+     width: 12px;
+     height: 12px;
+    }
+
+
+
+    /* section welcome style.css (1024px)  end */
+
+     /* section visiting style.css (1024px)  start */
+    .visiting {
+      margin: 53px 0px 1213px 0px;
+    }
+    
+    .title_line::after {
+      bottom: -15px;
+    }
+
+    .cards {
+      padding-top: 75px;
+      padding-left: 109px;
+      gap: 59px 108px;
+    }
+    
+    .img-places img {
+     width: 330px;
+    }
+
+    .name {
+     font-size: 28px;
+     line-height: 31px;
+     letter-spacing: 3px;
+    }
+
+    .tour1 {
+      font-size: 20px;
+      line-height: 23px;
+    }
+
+    .tour2 {
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    .name::after {
+     width: 151px;
+    } 
+
+    .img-places:hover .name::after {
+      width: 330px;
+    }
+      /* section visiting style.css (1024px)  end */
+
+      /* section explore style.css (1024px)  start */
+      .explore {
+        height: 1149px;
+      }
+     
+      .explore_container {
+        display: block;
+      }
+
+      .info {
+        width: 1024px;
+        
+      }
+      .title_line_explore {
+       padding-top: 53px;
+      }
+      
+      .title_line_explore::after {
+        bottom: -15px;
+        width: 984px;
+      }
+
+      .paragraph {
+        display: none;
+      }
+      
+      .paragraph-3 {
+        display: none;
+      }
+
+      .paragraph-1024 {
+        display: block;
+        width: 984px;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 38px;
+        margin-top: 73px;
+      }
+
+      .img_slide {
+        margin-left: 132px;
+        margin-top: -54px;
+      }
+
+      .item_slide {
+        margin-left: 421px;
+      }
+
+      /* section explore style.css (1024px)  end */
+
+      /* section video style.css (1024px)  start */
+      
+      .video {
+        margin-top: -22px;
+      }
+      .text-video {
+        display: none;
+      }
+
+      .video-title {
+        display: block;
+        
+      }
+
+      .video-player {
+        margin-top: 32px;
+      }
+      
+      .btn-huge_play {
+        width: 152px;
+      }
+
+      .img-video-btn {
+        margin-top: -69px;
+        margin-left: 262px;
+      }
+
+      .control_panel {
+        margin-top: -206px;
+        height: 60px;
+        gap: 0 30px;
+      }
+
+      .btn-play { 
+       margin-left: 10px;
+        
+      }
+
+      .progress {
+        height: 5px;
+        width: 564px;
+        margin-top: 27px;
+      }
+      
+      .progress::-webkit-slider-thumb {
+        width: 13px;
+        height: 13px;
+      }
+
+      .btn-vollume-img, .btn-square-img {
+        width: 100%;
+      }
+      
+      .btn-vollume, .btn-square {
+        width: 26px;
+      }
+      
+      .progress_vollume {
+        height: 5px;
+        margin-top: 27px;
+        width: 143px;
+      }
+
+      .progress_vollume::-webkit-slider-thumb {
+        width: 13px;
+        height: 13px;
+      }
+      
+      .items_video iframe {
+       height: 170px;
+      }
+       
+       
+        /* section video style.css (1024px)  end */
+
+        /* section gallery style.css (1024px)  start */
+      .gallery {
+        margin-top: -15px;
+      }
+      
+      .gallery-title h2 {
+        margin-top: -22px;
+      }
+      
+      .picture-container {
+        margin-top: 52px;
+        height: 1265px;
+        overflow: hidden;
+      }
+      
+
+      .gallery_shadow {
+        height: 239px;
+        width: 984px;
+        margin-top: 1078px;
+      }
+
+      .picture-inner-container {
+        height: 1500px;
+      }
+      
+      .picture-inner-container img {
+        width: 304px;
+       }
+        /* section gallery style.css (1024px)  end */
+
+         /* section tickets style.css (1024px)  start */
+      .container_tickets {
+        padding-top: 53px;
+      }
+
+      .ticket-type {
+        display: none;
+      }
+
+      .info-img {
+        position: relative;
+        margin-top: -28px;
+        width: 700px;
+        height: 440px;
+        overflow: hidden;
+        
+      }
+
+      .info-img img {
+       top:50%;
+       left:50%;
+       transform:translate(-50%,-50%);
+       position: absolute;
+       width: 100%;
+       object-fit:cover;
+      }
+
+      .ticket-cost {
+        margin-top: -30px;
+        margin-left: 80px;
+      }
+
+      .btms-cost {
+        width: 175px;
+      }
+
+      .ticket-cost h4 {
+        text-align: start;
+      }
+
+      .title_age {
+        margin-bottom: 9px;
+        padding-left: 0px;
+        margin-top: 32px;
+      }
+
+      .name_age {
+        margin-top: 30px;
+        padding-left: 0;
+        margin-bottom: 9px;
+      } 
+
+      .number {
+       font-size: 24px;
+       text-align: right;
+      }
+      
+      .btn-plus {
+        display: inline-block;
+        padding-left: 31px;
+        padding-top: 3px;
+      }
+
+      .total_cost {
+        text-align: justify;
+        margin-top: 25px;
+        margin-bottom: 59px;
+      }
+
+      .euro {
+        display: inline-block;
+        margin-right: 16px;
+      }
+
+      .parallax {
+       margin-top: 60px;
+       background-size: auto 131%;
+       background-position: 50% 70%;
+      }
+      /* section tickets style.css (1024px)  end */
+
+      /* section contacts style.css (1024px)  end */
+      
+      .container_contacts {
+        margin-top: 278px;
+
+    }
+    
+    .item_map {
+      position: relative;
+      width: 694px;
+      height: 454px;
+      overflow: hidden;
+      margin-top: 75px;
+     }
+
+      .item_map img {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      }
+
+      .contacts_numbers h4 {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        margin-top: -28px;
+      }
+
+      .contacts_items {
+        font-size: 20px;
+        line-height: 23px; 
+      }
+
+      .list-contacts {
+        margin-top: -17px;
+      }
+
+      .contacts_items:first-child {
+       margin-bottom: 15px;
+    }
+      
+    .contacts_items:last-child {
+      margin-top: 15px;
+    }  
+    /* section contacts style.css (1024px)  end */
+
+    /* section footer style.css (1024px)  start*/
+
+    .footer {
+    height: 368px;
+    }
+
+    .container_footer {
+      margin-top: 62px;
+      
+    }
+
+    .footer_navigation {
+      margin-top: 54px;
+      margin-left: 40px;
+      
+    }
+
+    .footer_item_two {
+      padding-right: 81px;
+    }
+    
+    .footer_logo {
+      margin-top: 53px;
+    }
+    
+    .footer_logo P {
+      width: 199px;
+    }
+
+    .list_apps {
+      margin-top: 145px;
+  }
+    /* section footer style.css (1024px)  end */
+
+    /* section popup style.css (1024px)  start */
+    .popup_container {
+      margin: 0;
+    }
+    
+    #container {
+      width: 1024px;
+    }
+    
+    .form {
+      padding-top: 75px;
+      padding-left: 27px;
+    }
+
+    .form_name2::after {
+      left: 27px;
+      top: 215px;
+    }
+
+    .Entry_ticket p::after {
+     left: 42px;
+     bottom: 205px;  
+  }
+
+    .form_card {
+    left: 468px;
+    position: absolute;
+    }
+
+    .card-back {
+      
+      right: 30px;
+      bottom: 96px;
+    }
+    /* section popup style.css (1024px)  end */
+}
+
+  @media (max-width:768px) {
+    .container {
+      width: 728px;
+    }
+     /* section header style.css (768px)  start */
+     .header_container {
+      margin-top: -18px;
+    }
+
+    .header_burger {
+      margin-top: -7px;
+    }
+    
+    .header_nav {
+      height: 847px;
+      top: 124px;
+    }
+
+    .header_nav.active {
+      width: 100%;
+      top: 124px;
+      height: 847px;
+  }
+
+    .header_list {
+     margin-top: 20px;
+   }
+
+   .header_item {
+    gap: 12px;
+   } 
+
+    .img-burger-menu {
+      display: block;
+    }
+
+    .img-burger-1 {
+      text-align: center;
+      margin-top: 11px;
+    }
+
+    .img-burger-2-3 {
+      display: flex;
+      justify-content: center;
+      gap:20px;
+      border-bottom:  1px solid rgba(255, 255, 255, 0.5);
+      padding-bottom: 34px;
+      margin: 20px 55px 0px 55px;
+    }
+    
+    #list_apps {
+      margin-top: 35px;
+      margin-left: 197px;
+    }
+  
+    /* section header style.css (768px)  end */
+
+    /* section welcome style.css (768px)  start */
+     .welcome {
+      height: 859px;
+     }
+
+    .list_img img {
+      width: 728px;
+      height: 546px;
+      padding-top: 12px;
+      margin-top: 200px
+    }
+
+    .welcome_buttom {
+      display: none;
+    }
+
+    .welcome_container {
+     width: 100%;
+     margin-top: -146px;
+     left: 60px;
+     text-align: center;
+    }
+
+    .section-title {
+      font-size: 40px;
+      line-height: 58px;
+    }
+
+    .welcome_container p {
+      font-size: 20px;
+      line-height: 23px;
+      padding-top: 4px;
+    }
+
+    .control {
+      top: 873px;
+      margin-right: 88px;
+      height: 95px;
+    }
+    /* section  welcome style.css (768px)  end */
+
+    /* section  visiting style.css (768px)  start */
+    
+    .visiting {
+      margin: 41px 0px 1050px 0px;
+   }
+ 
+    .title_line::after {
+      bottom: -24px;
+   }
+ 
+    .img-places img {
+       width: 280px;
+     }
+
+     .cards {
+      padding-top: 64px;
+      padding-left: 56px;
+      gap: 35px 56px;
+    }
+
+    .name {
+      font-size: 22px;
+      line-height: 24px;
+    }
+
+    .name::after {
+      width: 150px;
+  }
+   
+    .img-places:hover .name::after {
+    width: 280px;
+  }
+    
+    .tour1 {
+      font-size: 18px;
+      line-height: 21px;
+  }
+
+    .tour2 {
+    font-size: 16px;
+    line-height: 19px;
+  }
+    /* section   visiting style.css (768px)  end */
+
+     /* section   explore style.css (768px)  start */
+
+     .explore {
+      height: 908px;
+    }
+    
+     .title_line_explore {
+      padding-top: 41px;
+    }
+    
+    .title_line_explore::after {
+      bottom: -24px;
+      width: 728px;
+    }
+    
+    .info p {
+     display: none;
+    }
+    
+    .img_slide {
+      margin-left: 0px;
+      margin-top: -23px;
+    }
+
+    /* section  explore style.css (768px)  end */
+
+    /* section  video style.css (768px)  start*/
+     
+    .video {
+      margin-top: -34px;
+    }
+
+    .video-player {
+      margin-top: 21px;
+    }
+
+    .img-video-btn {
+      margin-top: -88px;
+      margin-left: 426px;
+      width: 52%;
+   }
+     
+    
+    .progress {
+       position: absolute;
+      margin-top: -5px;
+      left: 20px;
+      width: 728px;
+    }
+
+    .control_panel {
+      margin-top: -316px;
+      height: 51px;
+      padding-left: 21px;
+      padding-right: 21px;
+      gap: 35px;
+  }
+
+  .progress_vollume {
+    margin-top: 24px;
+    width: 485px;
+}
+
+  .items_video-3 {
+    display: none;
+  }
+  
+  .items_video {
+    margin-top: 21px;
+    gap: 20px;
+  }
+
+  .items_video iframe  {
+    height: 199px;
+  }
+
+  .btn_slide {
+    margin-top: 20px;
+    letter-spacing: 13px;
+    padding-bottom: 20px;
+}
+
+  /* section  video style.css (768px)  end */
+
+   /* section  gallery style.css (768px)  start */
+  
+   .gallery-title h2 {
+    margin-top: -34px;
+  }
+
+  .picture-inner-container {
+    gap: 24px 24px;
+    height: 2946px;
+  }
+  .picture-inner-container img {
+     width: 352px;
+  }
+
+  .picture-container {
+    height: 1079px;
+    margin-top: 42px;
+  }
+
+  .gallery_shadow {
+    width: 728px;
+    margin-top: 882px;
+  }
+
+    /* section  gallery style.css (768px)  end */
+
+    /* section  tickets style.css (768px)  start */
+    
+    .container_tickets {
+      padding-top: 41px;
+  }
+    
+    .info-img {
+    margin-top: -39px;
+    width: 444px;
+    height: 340px;
+    }
+
+    .info-img img {
+    top: 50%;
+    left: 50%;
+    width: 100%;
+     
+  }
+   
+    .ticket-cost {
+    margin-top: -38px;
+    margin-left: 60px;
+  }
+
+  .title_age {
+    margin-top: 38px;
+  }
+
+  .name_age {
+    margin-top: 26px;
+  }
+
+  .total_cost {
+    margin-top: 38px;
+    margin-bottom: 32px;
+}
+
+.parallax {
+  margin-top: 39px;
+  height: 300px;
+  background-size: auto 94%;
+    background-position: 53% 140%;
+}
+
+  /* section tickets style.css (768px)  end */
+
+  /* section contacts style.css (768px)  start */
+  .container_contacts {
+    margin-top: 81px;
+  }
+
+  .contacts_numbers {
+    margin-top: 84px;
+  }
+
+  .contacts_numbers h4 {
+    font-size: 20px;
+    line-height: 23px;
+    margin-top: -20px;
+}
+   
+  .contacts_items {
+    font-size: 18px;
+    line-height: 22px;
+}
+   
+   .list-contacts {
+  margin-top: -13px;
+} 
+
+    .item_map {
+  width: 728px;
+  height: 476px;
+  margin-top: 38px;
+ }
+  /* section contacts style.css (768px)  end */
+  
+  /* section footer style.css (768px)  end */
+
+  .footer {
+    height: 411px;
+  }
+
+  .container_footer {
+    margin-top: 67px;
+  }
+
+  .footer_logo P {
+    margin-top: -12px;
+  }
+
+  .footer_navigation {
+    margin-top: 44px;
+    margin-left: 97px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .footer_item_two {
+    padding-right: 152px;
+  }
+
+  .footer_list a {
+    line-height: 47px;
+  }
+  
+  .list_apps {
+    margin-top: 220px;
+    margin-left: 281px;
+    position: absolute;
+  }
+
+  footer::after {
+    margin-top: -64px;
+  }
+
+  .string_footer {
+    margin-top: 165px;
+  }
+  /* section footer style.css (768px)  end */
+
+  /* section popup style.css (768px)  start */
+   
+  #container {
+    width: 590px;
+  }
+  
+  .popup_container {
+   height: 1479px;
+  }
+  .form {
+    display: block;
+  }
+
+  .popup_close {
+    margin: 30px 28px 0px 0px;
+  }
+
+  .form {
+    padding-top: 80px;
+    padding-left: 30px;
+    width: 530px;
+  }
+
+  .form_name2 {
+    margin-top: 15px;
+  }
+
+  .form_name2::after {
+    left: 30px;
+    top: 221px;
+    width: 530px;
+ }
+
+  .form_tickets {
+   width: 530px;
+  }
+  
+  .form_time {
+   margin-top: 53px;
+   gap: 28px;
+  }
+
+  .form_time input {
+    width: 251px;
+  }
+
+  .costs {
+    justify-content: space-between;
+  }
+
+  .number_tickets {
+    margin-right: 14px;
+  }
+
+  .Entry_ticket p::after {
+    left: 45px;
+    bottom: 854px;
+    width: 500px;
+}
+
+  .form_card {
+  left: 0px;
+  position: initial;
+  margin-top: 31px;
+}
+
+.container_view {
+  margin: 24px 10px 0px 14px;
+  gap: 157px;
+}
+
+.price {
+  margin: 24px 14px 0px 14px;
+}
+
+.container_price::after {
+  width: 500px;
+}
+
+.card-back {
+  right: 43px;
+  bottom: 135px;
+}
+
+.card-front {
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+.buttom_book {
+  margin-top: 281px;
+  margin-left: 296px;
+}
+
+ /* section popup style.css (768px)  end */
+}
+
+
+  @media (max-width:420px) {
+    .container {
+      width: 380px;
+    }
+
+    /* section heder style.css (420px)  end */
+    
+    .header_container {
+      margin-top: -28px;
+      height: 90px;
+    }
+    
+    .header_logo h1 {
+      font-size: 16px;
+      line-height: 18px;
+      margin: 63px 0px 65px 0px;
+  }
+    .header_logo h1::before {
+      content:url(assets/svg/header320px.svg);
+    } 
+
+    .header_burger {
+    position: absolute;
+    margin-top: 61px;
+    margin-left: 348px;
+  }
+
+  .header_nav {
+    top: 70px;
+    height: 563px;
+  }
+
+  .header_nav.active {
+    width: 100%;
+    top: 70px;
+    height: 563px;
+  }
+
+  .header_list {
+    margin-top: 55px;
+  }
+  
+  .img-burger-1 {
+    display: none;
+  }
+ 
+  .img-burger-2-3 {
+    display: none;
+  }
+
+  .img-burger-420 {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 55px 0px 55px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  #list_apps {
+    margin-top: 24px;
+    margin-left: 0;
+    margin-left: 79px;
+  }
+
+  .list_apps li {
+  padding-left: 0px;
+ }
+ 
+ /* section header style.css (420px)  end */
+
+ /* section welcome style.css (420px)  end */
+
+ .welcome {
+  height: 572px;
+}
+ .welcome_container {
+  margin-top: 142px;
+  left: -4px;
+}
+
+.section-title {
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.section-title span {
+  padding-left: 12px;
+}
+
+.welcome_container p {
+  font-size: 16px;
+  line-height: 19px;
+  padding-top: 3px;
+  padding-left: 9px;
+}
+
+.list_img img {
+  width: 380px;
+  height: 292px;
+  padding-top: 7px;
+  margin-top: 200px;
+}
+
+.control {
+  top: 567px;
+  margin-right: 111px;
+  height: 67px;
+  width: 420px;
+  gap: 0px;
+  padding-top: 11px;
+}
+
+.control p {
+  font-size: 16px;
+  margin-left: 205px;
+  letter-spacing: 1px;
+}
+
+.control1 {
+  margin-left: 22px;
+}
+.control1 li {
+  width: 7px;
+  height: 7px;
+  margin-right: 10px;
+}
+
+/* section welcome style.css (420px)  end */
+
+/* section visiting style.css (420px)  end */
+.visiting {
+  height: 1085px;
+}
+
+.title_line::after {
+  bottom: -22px;
+}
+
+.cards {
+  padding-top: 62px;
+  padding-left: 50px;
+  gap: 35px 56px;
+}
+
+.name {
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 5px;
+}
+
+.tour1 {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+
+/* section visiting style.css (420px)  end */
+
+/* section explore style.css (420px) start */
+
+.explore {
+  height: 551px;
+}
+
+.title_line_explore::after {
+  bottom: -22px;
+  width: 380px;
+}
+
+.explore-img1 {
+  width: 100%;
+}
+
+.explore-img2 {
+  width: 61%;
+}
+
+.img_slide {
+  margin-top: -26px;
+}
+
+.item_slide {
+  width: 20px;
+  margin-left: 220px;
+  padding-top: 10px;
+}
+
+/* section explore style.css (420px)  end */  
+
+/* section video style.css (420px)  start */   
+
+.video_container {
+  margin-top: 71px;
+}
+
+.img-video-btn {
+  margin-top: -155px;
+  margin-left: 615px;
+  width: 33%;
+}
+
+.progress {
+  margin-top: -4px;
+  width: 380px;
+  height: 4px;
+}
+
+.progress::-webkit-slider-thumb {
+  width: 10px;
+  height: 10px;
+}
+
+.control_panel {
+  margin-top: -476px;
+  padding-left: 7px;
+  gap: 24px;
+  padding-right: 17px;
+}
+
+.progress_vollume {
+  margin-top: 23px;
+  width: 224px;
+}
+
+.btn-play-img {
+width: 68%;
+}
+
+.btn-vollume-img, .btn-square-img {
+  width: 80%;
+}
+
+.progress_vollume::-webkit-slider-thumb {
+  width: 10px;
+  height: 10px;
+}
+
+.items_video iframe  {
+  height: 101px;
+  width: 180px;
+}
+
+.items_video {
+  margin-top: 39px;
+}
+
+
+.btn_slide img {
+  width: 2%;
+}
+
+.btn_slide {
+  margin-top: 40px;
+  letter-spacing: 15px;
+}
+
+/* section video style.css (420px)  end */  
+
+/* section gallery style.css (420px) start */  
+.gallery-container {
+  margin-top: 21px;
+}
+
+.picture-inner-container img {
+  width: 178px;
+}
+
+.picture-container {
+  height: 1079px;
+  margin-top: 39px;
+  height: 637px;
+}
+
+.picture-inner-container {
+  height: 1000px;
+}
+
+.gallery_shadow {
+  height: 112px;
+  width: 380px;
+  margin-top: 564px;
+}
+/* section gallery style.css (420px)  end */  
+
+/* section tickets style.css (420px)  start */  
+.info-img {
+  margin-top: -41px;
+  width: 380px;
+  height: 160px;
+}
+
+.ticket-cost {
+  margin-top: 40px;
+  margin-left: 103px;
+}
+
+.ticket-cost h4 {
+  text-align: center;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: -18px;
+}
+
+.title_age, .name_age {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.name_age {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.title_age {
+  margin-bottom: 15px;
+}
+
+.total_cost {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.euro {
+  margin-right: 0px;
+}
+
+.click-buy {
+  font-size: 16px;
+  line-height: 0px;
+}
+
+.parallax {
+  background-size: auto 61%;
+    background-position: 69% 90%;
+}
+/* section tickets style.css (420px)  end */  
+
+/* section contacts style.css (420px)  start */  
+
+.container_contacts {
+  margin-top: 207px;
+}
+
+.contacts_numbers h4 {
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: -22px;
+}
+
+.contacts_items {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.item_map {
+  width: 380px;
+  height: 248px;
+  margin-top: 41px;
+}
+
+.item_map img {
+  top: -189px;
+  right: -288px; 
+}
+/* section contacts style.css (420px)  end */  
+
+/* section footer style.css (420px)  start */  
+.footer {
+  height: 400px;
+}
+.container_footer {
+  margin-top: 40px;
+  flex-direction: column;
+}
+
+.footer_logo p::before {
+  content: url(assets/svg/header320px.svg);
+  padding-right: 20px;
+}
+
+.footer_logo P {
+  margin-top: -13px;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.footer_list {
+  columns: 3;
+}
+
+.footer_navigation {
+  margin-top: 27px;
+  margin-left: 0px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.footer_item_two {
+  margin-left: 39px;
+}
+
+#footer_link3 {
+  margin-left: 28px;
+}
+
+#footer_link4 {
+  margin-left: -10px;
+}
+
+.list_apps {
+  margin-top: 208px;
+  margin-left: 59px;
+}
+
+footer::after {
+  margin-top: -64px;
+  height: 2px;
+}
+
+.name_school , .name_developer {
+  display: none;
+}
+
+.year {
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 4px;
+}
+
+.string_footer {
+  margin-top: 157px;
+}
+/* section footer style.css (420px)  end */ 
+
+/* section popup style.css (420px)  start */  
+
+#container {
+  width: 420px;
+  margin: 0px;
+}
+
+.popup_close {
+  margin: 29px 29px 0px 0px;
+}
+
+.popup_container {
+  height: 1754px;
+}
+
+form {
+  padding-top: 0px;
+}
+
+.form_name1 {
+  font-size: 32px;
+  line-height: 35px;
+}
+
+.form_name2::after {
+  left: 30px;
+  top: 202px;
+  width: 360px;
+  height: 2px;
+}
+
+.form_time {
+  flex-direction: column;
+  gap: 0px;
+}
+
+.form_time input {
+  width: 360px;
+}
+
+.input-date__img {
+  right: 185px;
+}
+
+.Name {
+  width: 68%;
+}
+
+.Entry_ticket {
+  width: 68%;
+}
+
+.Entry_ticket p::after {
+  left: 45px;
+  bottom: 1082px;
+  width: 330px;
+}
+
+.costs {
+ gap: 0px;
+}
+
+.title_ages P {
+ font-size: 19px;
+ line-height: 32px; 
+}
+
+.form_card {
+  width: 360px;
+  margin-top: 75px;
+  height: 885px;
+}
+
+.container_view {
+  margin: 25px 10px 0px 14px;
+  gap: 16px;
+}
+
+.container_view-img {
+  width: 120px;
+}
+
+.container_price::after {
+  width: 329px;
+  margin-top: 69px;
+}
+
+.card-back {
+  right: 44px;
+  bottom: 160px;
+  overflow: hidden;
+}
+
+.card-black-cvv {
+  margin-left: -29px;
+}
+
+.name_cvv {
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.cvv-number {
+  font-size: 9px;
+  line-height: 11px;
+}
+
+.card-back, .card-front {
+  width: 330px;
+ height: 209px;
+}
+
+.visa {
+  left: 254px;
+  top: 36px;
+}
+
+.mastercard {
+  left: 254px;
+  top: 68px;
+}
+
+#card-username {
+  width: 292px;
+}
+
+.card-front-number, .card-front-date, .card-front-name {
+font-size: 11px;
+line-height: 13px;
+}
+
+.buttom_book {
+  margin-top: 500px;
+  margin-left: 123px;
+}
+/* section popup style.css (420px)  end */  
+}   
+    
+    
+
+  
